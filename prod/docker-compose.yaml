@@ -1,0 +1,12 @@
+name: detection-coverage-ng-prod
+
+services:
+  server:
+    extends:
+      file: ./compose.server.yaml
+      service: server
+
+  nginx:
+    extends:
+      file: ./compose.nginx.yaml
+      service: nginx

@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: ghcr.io/scse-tools/coverage-analyzer-ng-nginx:latest
+    restart: always
+    ports:
+      - "${PORT:-8502}:${NGINX_PORT:-80}"
+    env_file:
+      - path: ../environment/env.nginx
+        required: true
+      - path: ../environment/env.nginx.override
+        required: false
+    volumes:
+      - ../ssl/ssl.pem:/etc/nginx/ssl/ssl.pem
+      - ../ssl/ssl.key:/etc/nginx/ssl/ssl.key

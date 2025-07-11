@@ -1,7 +1,7 @@
 services:
   server:
     restart: always
-    image: ghcr.io/scse-tools/coverage-analyzer-ng-server:latest
+    image: ghcr.io/stellarcyber-cse/coverage-analyzer-ng-server:latest
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/ping"]
       interval: 30s

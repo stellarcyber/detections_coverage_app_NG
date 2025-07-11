@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: ghcr.io/scse-tools/coverage-analyzer-ng-nginx:latest
+    image: ghcr.io/stellarcyber-cse/coverage-analyzer-ng-nginx:latest
     restart: always
     ports:
       - "${PORT:-8502}:${NGINX_PORT:-80}"

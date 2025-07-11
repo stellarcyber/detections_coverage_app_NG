@@ -9,6 +9,6 @@ if [ -f ../environment/env.compose ]; then
 fi
 touch ../ssl/ssl.pem
 touch ../ssl/ssl.key
-docker pull ghcr.io/scse-tools/coverage-analyzer-ng-server:latest \
-&& docker pull ghcr.io/scse-tools/coverage-analyzer-ng-nginx:latest \
+docker pull ghcr.io/stellarcyber-cse/coverage-analyzer-ng-server:latest \
+&& docker pull ghcr.io/stellarcyber-cse/coverage-analyzer-ng-nginx:latest \
 && docker compose $ENV_FILE_PARAMS -f docker-compose.yaml up -d $@

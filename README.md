@@ -1,10 +1,12 @@
+Latest version of server and client is **2.1.0**
+
 # Detection Coverage App NG
 
 A full front-end client reimplementation of https://github.com/stellarcyber/detection_coverage_app
 
 ## Demo
 
-A testing version of the app can be found at https://analyzer-dev.scse-tools.com:5443
+A testing version of the app can be found at https://coverage-analyzer-dev.stellarcyber.cloud/
 
 ## Docker Compose Environment
 
